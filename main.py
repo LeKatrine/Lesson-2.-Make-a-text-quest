@@ -32,8 +32,8 @@ first_answer = input("""Первый вопрос нашего квеста:
 Введите ответ (цифрами): \
 """)
 if first_answer == "980":
-    points_one = 10
-    player_score = player_score + points_one
+    first_answer_points = 10
+    player_score = player_score + first_answer_points
     has_first_artefact = True
     print("""Не знаю, отгадал ты или действительно посчитал, но ты прав! 
     У тебя теперь {0} очков
@@ -48,8 +48,8 @@ second_answer = input("""Второй вопрос нашего квеста:
 Введите ответ (текстом, с большой буквы): \
 """)
 if second_answer == "Тишина":
-    points_two = 20
-    player_score = player_score + points_two
+    second_answer_points = 20
+    player_score = player_score + second_answer_points
     has_second_artefact = True
     print("""Да, это она! 
     У тебя теперь {0} очков,
@@ -64,8 +64,8 @@ third_answer = input("""Третий вопрос нашего квеста:
 Введите ответ (текстом, с большой буквы): \
 """)
 if third_answer == "Эхо":
-    points_three = 30
-    player_score = player_score + points_three
+    third_answer_points = 30
+    player_score = player_score + third_answer_points
     has_third_artefact = True
     print("""Да, это эхо! Оно ответило тебе и дало новый артефакт - "Вибрации рекурсии"
     У тебя теперь {0} очков\n""".format(player_score))
